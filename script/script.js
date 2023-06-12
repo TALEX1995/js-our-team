@@ -43,7 +43,7 @@ const teamInformation = [
 
 // Cicle to create element to insert information into DOM
 
-let elementInformation;
+let elementInformation = ''
 
 for (let i = 0; i < teamInformation.length; i++) {
     // Write in console
@@ -55,7 +55,7 @@ for (let i = 0; i < teamInformation.length; i++) {
     `
     <p>Name: ${teamInformation[i].name}</p>
     <p>Role: ${teamInformation[i].role}</p>
-    <p>Photo: ${teamInformation[i].photo}</p>
+    <img src="img/${teamInformation[i].photo}"> 
     `
 }
 
