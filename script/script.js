@@ -49,13 +49,14 @@ for (let i = 0; i < teamInformation.length; i++) {
     // Write in console
     console.log(teamInformation[i].name, teamInformation[i].role, teamInformation[i].photo)
 
-    // Insert into DOM
-    
+    // Insert into DOM  
     elementInformation += 
     `
-    <p>Name: ${teamInformation[i].name}</p>
-    <p>Role: ${teamInformation[i].role}</p>
+    <div class="col-4">
     <img src="img/${teamInformation[i].photo}"> 
+    <p class="pt-3">${teamInformation[i].name}</p>
+    <p class="pb-3">${teamInformation[i].role}</p>
+    </div>
     `
 }
 
