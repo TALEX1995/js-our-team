@@ -45,17 +45,17 @@ const teamInformation = [
 
 let elementInformation = ''
 
-for (let i = 0; i < teamInformation.length; i++) {
+for (let information of teamInformation) {
     // Write in console
-    console.log(teamInformation[i].name, teamInformation[i].role, teamInformation[i].photo)
+    console.log(information.name, information.role, information.photo)
 
     // Insert into DOM  
     elementInformation += 
     `
     <div class="col-4">
-    <img src="img/${teamInformation[i].photo}"> 
-    <p class="pt-3">${teamInformation[i].name}</p>
-    <p class="pb-3">${teamInformation[i].role}</p>
+    <img src="img/${information.photo}"> 
+    <p class="pt-3">${information.name}</p>
+    <p class="pb-3">${information.role}</p>
     </div>
     `
 }
