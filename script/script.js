@@ -41,9 +41,23 @@ const teamInformation = [
 ]
 
 
-// Cicle to create element to insert infromation into DOM
+// Cicle to create element to insert information into DOM
 
-for (information of teamInformation) {
-    console.log(information)
+let elementInformation;
+
+for (let i = 0; i < teamInformation.length; i++) {
+    // Write in console
+    console.log(teamInformation[i].name, teamInformation[i].role, teamInformation[i].photo)
+
+    // Insert into DOM
+    
+    elementInformation += 
+    `
+    <p>Name: ${teamInformation[i].name}</p>
+    <p>Role: ${teamInformation[i].role}</p>
+    <p>Photo: ${teamInformation[i].photo}</p>
+    `
 }
+
+personalInformation.innerHTML = elementInformation
 
